@@ -49,19 +49,8 @@ void insert(int data) {
 		while (1) {
 			// Traverse the tree in search of an empty spot
 			
-			// parent will serve as the 'pivot' for comparing the incoming value with the current node
+			// Parent will serve as the 'pivot' for comparing the incoming value with the current node
 			parent = current;
-
-			/* 1st iter 	 5 parent
-						   /   \
-						  2
-						 / \
-			
-
-			   2nd iter 	 5
-						   /   \
-				   parent 2 
-						 / \          */
 
 			// Check if the incoming value is less than the current parent node, if so, it belongs to the left of it
 			if (data < parent->data) {
